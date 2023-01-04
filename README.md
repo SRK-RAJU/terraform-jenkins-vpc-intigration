@@ -1,2 +1,2 @@
-# terraform-jenkins-ec2-intigration
-intigration of terraform and jenkins following       https://medium.com/appgambit/terraform-with-jenkins-pipeline-439babe4095c
+# terraform-jenkins-ec2
+This is demo repository for Terraform integration with jenkins.
