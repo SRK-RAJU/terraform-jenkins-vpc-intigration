@@ -1,6 +1,6 @@
 provider "aws" {
 # region = "${var.region}"
-  region = "us-east-1"
+  region = "us-east1"
 #  profile = "prashant_appgambit="
-  profile = "raju-tf-jk-it"
+#  profile = "raju-tf-jk-it"
 }
