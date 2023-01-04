@@ -1,14 +1,14 @@
   pipeline {
     agent {
       node {
-        label "master"
+        label "main"
       } 
     }
 
     stages {
       stage('fetch_latest_code') {
         steps {
-          git credentialsId: '17371c59-6b11-42c7-bb25-a37a9febb4db', url: 'https://github.com/PrashantBhatasana/terraform-jenkins-ec2'
+          git credentialsId: '361d8cd7-ecdc-4d3b-91e0-814681240b8b', url: 'https://github.com/SRK-RAJU/terraform-jenkins-ec2-intigration'
         }
       }
 
