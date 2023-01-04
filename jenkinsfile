@@ -6,7 +6,8 @@ pipeline {
     stages {
         stage('Git checkout') {
            steps{
-                git branch: 'main', credentialsId: '361d8cd7-ecdc-4d3b-91e0-814681240b8b', url: 'https://github.com/SRK-RAJU/terraform-jenkins-ec2-intigration'
+                git branch: 'main', credentialsId: '361d8cd7-ecdc-4d3b-91e0-814681240b8b',
+                url: 'https://github.com/SRK-RAJU/terraform-jenkins-ec2-intigration'
             }
         }
         stage('terraform format check') {
@@ -14,10 +15,14 @@ pipeline {
                 sh 'terraform fmt'
             }
         }
-        stage('terraform Init') {
+        stage('terraform init') {
             steps{
                 sh 'terraform init'
             }
+        stage('terraform plan') {
+              steps{
+                            sh 'terraform plan'
+                        }
         }
         stage('terraform apply') {
             steps{
